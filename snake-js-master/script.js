@@ -430,7 +430,6 @@ function nextLevel(snake) {
     initWall5();
   }
   snake.position = initPosition();
-  snake.health += 3;
   stop(snake1);
   upLevel = 1;
 }
