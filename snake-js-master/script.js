@@ -54,6 +54,7 @@ var isPlay = 0;
 var upLevel = 0;
 var hitwallAudio = new Audio("assets/hitwall.wav");
 var levelAudio = new Audio("assets/level.wav");
+var doneAudio = new Audio("assets/done.wav");
 var GameOverAudio = new Audio("assets/over.wav");
 var eatAudio = new Audio("assets/eat.wav");
 
@@ -342,7 +343,7 @@ function eat(snake) {
     snake.body.push({ x: snake.position.x, y: snake.position.y });
 
     if (snake.score === 25) {
-      levelAudio.play();
+      doneAudio.play();
       isWin = 1;
       stop(snake);
       return;
@@ -370,7 +371,7 @@ function eat(snake) {
     snake.body.push({ x: snake.position.x, y: snake.position.y });
 
     if (snake.score === 25) {
-      levelAudio.play();
+      doneAudio.play();
       isWin = 1;
       stop(snake);
       return;
@@ -401,7 +402,7 @@ function eat(snake) {
     snake.body.push({ x: snake.position.x, y: snake.position.y });
 
     if (snake.score === 25) {
-      levelAudio.play();
+      doneAudio.play();
       isWin = 1;
       stop(snake);
       return;
