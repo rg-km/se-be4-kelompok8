@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <title>Snake Game | SE-BE-Kellompok 8</title>
+  </head>
+  <script type="text/javascript" src="script.js"></script>
+  <body onload="draw();">
+    <img
+      id="apple"
+      style="display: none"
+      width="20"
+      height="20"
+      src="assets/apple.jpg"
+      alt=""
+    />
+    <img
+      id="appleHealth"
+      style="display: none"
+      width="20"
+      height="20"
+      src="assets/health.png"
+      alt=""
+    />
+    <img
+      id="head"
+      style="display: none"
+      width="20"
+      height="20"
+      src="assets/snake.jpg"
+      alt=""
+    />
+    <img
+    id="body"
+    style="display: none"
+    width="20"
+    height="20"
+    src="assets/bodyImg.jpg"
+    alt=""
+  />
+
+    <div >
+      <button style="background: rgb(123, 108, 189); margin-left:370px ;" onclick="play();">
+        Mulai
+      </button>
+      <br /><br />
+    </div>
+ 
+    <canvas
+      id="snakeBoard"
+      width="400"
+      height="400"
+      style="border: 2px solid #383636;
+       display: inline;
+       margin-left: 370px;
+       
+       "
+    ></canvas> 
+    <br>
+    <div style = "
+
+    margin-top: -270px;
+    margin-right: 400px;
+    float:right; 
+
+    
+    ">
+    <canvas
+      id="score1Board"
+      width="100"
+      height="60"
+      style="border: 3px solid #383636; display: block;"
+
+    >
+    </canvas>
+    <canvas
+      id="health"
+      width="100"
+      height="60"
+      style="border: 3px solid #383636; display: block;"
+    >
+    </canvas>
+    <canvas
+      id="levelBoard"
+      width="100"
+      height="60"
+      style="border: 3px solid #383636; display: block;"
+    >
+    </canvas>
+    <canvas
+      id="fastBoard"
+      width="100"
+      height="60"
+      style="border: 3px solid #383636; display: block;"
+    >
+    </canvas>
+  
+  </div>
+  </body>
+</html>
